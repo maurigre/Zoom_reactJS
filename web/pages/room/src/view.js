@@ -23,8 +23,6 @@ class View {
     }
 
     renderVideo({userId, stream = null, url = null, isCurrentId = false}) {
-        console.log("teste MAURI GREGORIO REIS")
-
         const video = this.createVideoElement({src:url, srcObject:stream})
         this.appendToHtmlTree(userId, video, isCurrentId)
 
@@ -41,9 +39,6 @@ class View {
         div.append(div2)
 
         const videoGrid = document.getElementById('video-grid')
-        videoGrid.append(div)
-        console.log(div)
-
-    
+        videoGrid.append(div)   
     }
 }
